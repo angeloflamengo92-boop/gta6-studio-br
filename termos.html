@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termos de Serviço — GTA 6 Studio BR</title>
+  <meta name="description" content="Termos de Serviço do GTA 6 Studio BR: o que é o serviço, regras de conteúdo, publicação automática e uso de inteligência artificial.">
+  <meta name="theme-color" content="#1a0b33">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Termos de Serviço — GTA 6 Studio BR">
+  <meta property="og:description" content="Termos de Serviço do GTA 6 Studio BR: o que é o serviço, regras de conteúdo, publicação automática e uso de inteligência artificial.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd27a'/%3E%3Cstop offset='.55' stop-color='%23ff4fb0'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%231a0b33'/%3E%3Ccircle cx='32' cy='34' r='18' fill='url(%23g)'/%3E%3Crect x='10' y='38' width='44' height='3' fill='%231a0b33'/%3E%3Crect x='10' y='45' width='44' height='4' fill='%231a0b33'/%3E%3C/svg%3E">
+  <script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
+  <style>
+    :root {
+      --noite: #0b0617;
+      --noite-2: #140a28;
+      --tinta: #f7f2ff;
+      --suave: #cbbfe6;
+      --apagado: #9d90bd;
+      --rosa: #ff3fb4;
+      --rosa-2: #ff7ad1;
+      --roxo: #8b5cf6;
+      --azul: #38d9ff;
+      --laranja: #ffb35c;
+      --verde: #5ef2b0;
+      --amarelo: #ffd166;
+      --vidro: linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.035));
+      --linha: rgba(255,255,255,.13);
+      --raio: 22px;
+      --sombra: 0 24px 70px -34px rgba(255,63,180,.55), 0 2px 0 rgba(255,255,255,.04) inset;
+      --letra: "Segoe UI Variable Display", "Segoe UI Variable Text", "SF Pro Display", -apple-system, system-ui, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--letra);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--tinta);
+      background:
+        radial-gradient(1200px 700px at 85% 8%, rgba(139,92,246,.20), transparent 60%),
+        radial-gradient(900px 600px at 5% 40%, rgba(255,63,180,.12), transparent 60%),
+        radial-gradient(900px 700px at 90% 80%, rgba(56,217,255,.10), transparent 60%),
+        var(--noite);
+      overflow-x: hidden;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: var(--azul); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #8be9ff; }
+    :focus-visible { outline: 2px solid var(--azul); outline-offset: 3px; border-radius: 8px; }
+    .salto { position: absolute; left: -9999px; top: 8px; background: var(--tinta); color: var(--noite); padding: 8px 14px; border-radius: 10px; z-index: 100; }
+    .salto:focus { left: 16px; }
+    .caixa { width: min(1160px, 100% - 32px); margin-inline: auto; }
+
+    /* ---------- cabeçalho ---------- */
+    .topo {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(11,6,23,.62);
+      backdrop-filter: blur(16px) saturate(150%);
+      -webkit-backdrop-filter: blur(16px) saturate(150%);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .topo .caixa { display: flex; align-items: center; gap: 20px; min-height: 70px; }
+    .marca { display: flex; align-items: center; gap: 12px; color: var(--tinta); text-decoration: none; flex-shrink: 0; }
+    .marca:hover { color: var(--tinta); }
+    .selo { width: 40px; height: 40px; flex-shrink: 0; filter: drop-shadow(0 0 12px rgba(255,63,180,.5)); }
+    .marca b {
+      display: block; font-size: 17px; font-weight: 800; letter-spacing: .14em; line-height: 1.1;
+      background: linear-gradient(90deg, #ffd27a, var(--rosa) 45%, var(--roxo) 75%, var(--azul));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .marca small { display: block; font-size: 12.5px; color: var(--suave); letter-spacing: .02em; margin-top: 2px; }
+    .menu { margin-left: auto; display: flex; gap: 4px; }
+    .menu a {
+      color: var(--suave); text-decoration: none; font-size: 14.5px; font-weight: 500;
+      padding: 8px 12px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s;
+    }
+    .menu a:hover { color: var(--tinta); background: rgba(255,255,255,.07); }
+
+    /* ---------- abertura (pôr do sol) ---------- */
+    .abertura { --h: 170px; position: relative; min-height: min(900px, 100svh); display: grid; align-items: center; overflow: hidden; isolation: isolate; }
+    .abertura::before {
+      content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background: linear-gradient(90deg, rgba(13,6,32,.72) 0%, rgba(13,6,32,.38) 45%, transparent 70%);
+    }
+    .ceu {
+      position: absolute; inset: 0 0 var(--h) 0; z-index: -3; overflow: hidden;
+      background: linear-gradient(180deg, #0d0620 0%, #2a0f52 30%, #6c1a83 52%, #c42a8c 70%, #ff5e8a 86%, #ff9c63 100%);
+    }
+    .estrelas {
+      position: absolute; inset: 0 0 40% 0; z-index: -3; opacity: .55;
+      background-image:
+        radial-gradient(1.2px 1.2px at 12% 18%, #fff, transparent),
+        radial-gradient(1px 1px at 28% 8%, #fff, transparent),
+        radial-gradient(1.4px 1.4px at 44% 22%, #ffd9f3, transparent),
+        radial-gradient(1px 1px at 63% 12%, #fff, transparent),
+        radial-gradient(1.2px 1.2px at 78% 26%, #cdeeff, transparent),
+        radial-gradient(1px 1px at 90% 9%, #fff, transparent),
+        radial-gradient(1px 1px at 6% 34%, #fff, transparent),
+        radial-gradient(1.1px 1.1px at 54% 4%, #fff, transparent);
+    }
+    .sol {
+      position: absolute; z-index: -2; left: 72%; bottom: 0;
+      width: min(540px, 82vw); aspect-ratio: 1; transform: translate(-50%, 42%);
+      border-radius: 50%;
+      background: linear-gradient(180deg, #ffe9a3 0%, #ffc46b 30%, #ff7a9c 58%, #e0368f 80%, #9c1f8f 100%);
+      box-shadow: 0 0 120px 30px rgba(255,94,150,.45), 0 0 260px 80px rgba(255,140,90,.18);
+      -webkit-mask-image: linear-gradient(180deg, #000 0 50%, transparent 50% 53.5%, #000 53.5% 60%, transparent 60% 64%, #000 64% 70%, transparent 70% 75%, #000 75% 80.5%, transparent 80.5% 86%, #000 86% 90%, transparent 90%);
+              mask-image: linear-gradient(180deg, #000 0 50%, transparent 50% 53.5%, #000 53.5% 60%, transparent 60% 64%, #000 64% 70%, transparent 70% 75%, #000 75% 80.5%, transparent 80.5% 86%, #000 86% 90%, transparent 90%);
+      animation: brilho 7s ease-in-out infinite alternate;
+    }
+    @keyframes brilho { to { box-shadow: 0 0 150px 40px rgba(255,94,150,.55), 0 0 300px 100px rgba(255,140,90,.22); } }
+    .cidade { position: absolute; z-index: -1; left: 0; right: 0; bottom: 0; height: 120px; width: 100%; }
+    .chao { position: absolute; z-index: -1; left: 0; right: 0; bottom: 0; height: var(--h); overflow: hidden; perspective: 260px; background: linear-gradient(180deg, #2a0d40, #12062a); }
+    .grelha {
+      position: absolute; left: -50%; right: -50%; top: 0; height: 220%;
+      transform-origin: 50% 0; transform: rotateX(62deg);
+      background-image:
+        linear-gradient(rgba(255,79,176,.55) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(56,217,255,.38) 1.5px, transparent 1.5px);
+      background-size: 64px 64px;
+      animation: andar 9s linear infinite;
+      -webkit-mask-image: linear-gradient(180deg, transparent, #000 18%);
+              mask-image: linear-gradient(180deg, transparent, #000 18%);
+    }
+    @keyframes andar { to { background-position: 0 64px, 0 0; } }
+    .reflexo {
+      position: absolute; left: 72%; top: 0; width: min(420px, 60vw); height: 70%; transform: translateX(-50%);
+      background: linear-gradient(180deg, rgba(255,140,120,.35), transparent 80%);
+      filter: blur(18px);
+    }
+    .palmeira { position: absolute; z-index: 0; bottom: 0; width: clamp(150px, 22vw, 300px); color: #0f0420; pointer-events: none; }
+    .palmeira.esq { left: max(-40px, -2vw); }
+    .palmeira.dir { right: max(-50px, -3vw); transform: scaleX(-1); width: clamp(130px, 19vw, 260px); }
+    .abertura .caixa { position: relative; z-index: 2; padding: 64px 0 calc(var(--h) + 36px); }
+    .abertura-texto { max-width: 720px; }
+    .etiqueta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: 999px;
+      font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: #ffe1f3; background: rgba(255,63,180,.16); border: 1px solid rgba(255,122,209,.35);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    }
+    .ponto { width: 7px; height: 7px; border-radius: 50%; background: var(--rosa); box-shadow: 0 0 10px var(--rosa); }
+    h1 {
+      margin: 18px 0 18px; font-size: clamp(40px, 7.2vw, 84px); line-height: 1.02; letter-spacing: -.025em; font-weight: 800;
+      text-shadow: 0 6px 40px rgba(40,5,60,.55);
+    }
+    h1 .neon {
+      background: linear-gradient(92deg, #ffe08a 0%, #ff8fc8 30%, var(--rosa) 55%, #b98cff 80%, var(--azul) 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      filter: drop-shadow(0 0 22px rgba(255,63,180,.45));
+    }
+    .lide { font-size: clamp(17px, 2vw, 20px); color: #efe6ff; max-width: 620px; margin: 0 0 30px; text-shadow: 0 2px 18px rgba(20,4,40,.7); }
+    .botoes { display: flex; flex-wrap: wrap; gap: 12px; }
+    .botao {
+      display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 14px;
+      font-weight: 650; font-size: 15.5px; text-decoration: none; transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .botao.cheio { color: #1b0730; background: linear-gradient(92deg, #ffd27a, var(--rosa-2) 45%, var(--rosa)); box-shadow: 0 10px 40px -10px rgba(255,63,180,.8); }
+    .botao.cheio:hover { color: #1b0730; transform: translateY(-2px); box-shadow: 0 16px 50px -12px rgba(255,63,180,.95); }
+    .botao.vidro { color: var(--tinta); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .botao.vidro:hover { color: var(--tinta); background: rgba(255,255,255,.14); transform: translateY(-2px); }
+    .numeros { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; padding: 0; list-style: none; }
+    .numeros li {
+      padding: 10px 16px; border-radius: 14px; font-size: 14px; color: var(--suave);
+      background: rgba(20,8,40,.45); border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    }
+    .numeros b { color: var(--tinta); font-weight: 700; }
+
+    /* ---------- secções ---------- */
+    section { position: relative; }
+    .bloco { padding: clamp(72px, 10vw, 120px) 0; }
+    .cabeca { max-width: 720px; margin-bottom: 44px; }
+    .sobre { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--rosa-2); margin: 0 0 10px; }
+    h2 { font-size: clamp(30px, 4.4vw, 48px); line-height: 1.1; letter-spacing: -.02em; margin: 0 0 14px; font-weight: 800; }
+    .cabeca p { color: var(--suave); margin: 0; font-size: 18px; }
+    h3 { font-size: 20px; line-height: 1.3; margin: 0 0 8px; letter-spacing: -.01em; }
+
+    .vidro {
+      background: var(--vidro);
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      box-shadow: var(--sombra);
+      backdrop-filter: blur(16px) saturate(140%);
+      -webkit-backdrop-filter: blur(16px) saturate(140%);
+    }
+    .grade { display: grid; gap: 18px; }
+    .g4 { grid-template-columns: repeat(4, 1fr); }
+    .g3 { grid-template-columns: repeat(3, 1fr); }
+    .cartao { padding: 26px; position: relative; overflow: hidden; transition: transform .3s, border-color .3s; }
+    .cartao:hover { transform: translateY(-4px); border-color: rgba(255,122,209,.38); }
+    .cartao p { color: var(--suave); margin: 0; font-size: 15.5px; }
+    .icone {
+      width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; margin-bottom: 18px;
+      background: linear-gradient(140deg, rgba(255,63,180,.28), rgba(139,92,246,.22));
+      border: 1px solid rgba(255,122,209,.35); color: #ffd6ef;
+    }
+    .icone svg { width: 24px; height: 24px; }
+    .lista { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+    .lista li { position: relative; padding-left: 20px; font-size: 14.5px; color: #ddd3f3; line-height: 1.5; }
+    .lista li::before { content: ""; position: absolute; left: 2px; top: .58em; width: 7px; height: 7px; border-radius: 2px; background: linear-gradient(135deg, var(--rosa), var(--roxo)); }
+
+    /* IA */
+    .ia { display: grid; grid-template-columns: 1.05fr 1fr; gap: 22px; align-items: start; }
+    .fluxo { padding: 28px; }
+    .passos { list-style: none; margin: 0; padding: 0; counter-reset: p; display: grid; gap: 4px; }
+    .passos li { counter-increment: p; display: grid; grid-template-columns: 40px 1fr; gap: 14px; padding: 12px 0; border-bottom: 1px dashed rgba(255,255,255,.09); }
+    .passos li:last-child { border-bottom: 0; }
+    .passos li::before {
+      content: counter(p, decimal-leading-zero); font-family: var(--mono); font-size: 13px; font-weight: 700;
+      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+      color: var(--azul); background: rgba(56,217,255,.1); border: 1px solid rgba(56,217,255,.3);
+    }
+    .passos b { display: block; font-size: 16px; }
+    .passos li > div > span { display: block; color: var(--suave); font-size: 14.5px; line-height: 1.5; }
+    .tag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; vertical-align: 2px; }
+    .tag.local { color: var(--verde); background: rgba(94,242,176,.12); border: 1px solid rgba(94,242,176,.3); }
+    .tag.ia { color: #d6c2ff; background: rgba(139,92,246,.18); border: 1px solid rgba(139,92,246,.4); }
+    .equipa { padding: 28px; }
+    .agentes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
+    .agentes li { padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.08); }
+    .agentes li.chefe { grid-column: 1 / -1; background: linear-gradient(110deg, rgba(255,63,180,.18), rgba(139,92,246,.14)); border-color: rgba(255,122,209,.3); }
+    .agentes b { display: block; font-size: 15px; }
+    .agentes span { display: block; font-size: 13.5px; color: var(--suave); line-height: 1.45; }
+    .controlo { margin-top: 22px; padding: 26px 28px; display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
+    .controlo .icone { margin: 0; background: linear-gradient(140deg, rgba(94,242,176,.22), rgba(56,217,255,.18)); border-color: rgba(94,242,176,.35); color: #c9ffe9; }
+    .controlo p { margin: 0 0 6px; color: var(--suave); }
+    .controlo .lista { grid-template-columns: repeat(2, 1fr); column-gap: 24px; }
+
+    /* redes */
+    .rede { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+    .rede .topo-rede { display: flex; align-items: center; gap: 14px; }
+    .logo { width: 50px; height: 50px; border-radius: 15px; display: grid; place-items: center; flex-shrink: 0; }
+    .logo svg { width: 26px; height: 26px; }
+    .logo.yt { background: linear-gradient(140deg, #ff3b3b, #c4121b); }
+    .logo.ig { background: radial-gradient(circle at 30% 110%, #ffd776 0%, #ff8a3d 25%, #f0307a 50%, #b534c5 75%, #5b5bf0 100%); }
+    .logo.tt { background: #0d0d12; border: 1px solid rgba(255,255,255,.16); }
+    .rede h3 { margin: 0; }
+    .rede .arroba { color: var(--suave); font-size: 14.5px; margin: 0; }
+    .rede > p { color: var(--suave); margin: 0; font-size: 15.5px; flex: 1; }
+    .estado { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 650; }
+    .estado::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
+    .estado.ok { color: var(--verde); background: rgba(94,242,176,.1); border: 1px solid rgba(94,242,176,.28); }
+    .estado.prep { color: var(--amarelo); background: rgba(255,209,102,.1); border: 1px solid rgba(255,209,102,.28); }
+    .rede .botao { align-self: flex-start; padding: 11px 18px; font-size: 14.5px; }
+
+    /* documentos */
+    .docs-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .doc { padding: clamp(24px, 4vw, 48px); max-width: 900px; margin: 0 auto 24px; }
+    .doc h2 { font-size: clamp(26px, 3.6vw, 38px); }
+    .doc .data { color: var(--apagado); font-size: 14px; margin: 0 0 24px; }
+    .doc h3 { font-size: 19px; margin: 34px 0 10px; color: #ffe1f3; }
+    .doc p, .doc li { color: #e2d9f6; font-size: 16px; line-height: 1.75; }
+    .doc ul { padding-left: 22px; margin: 8px 0 12px; }
+    .doc li { margin: 4px 0; }
+    .doc li::marker { color: var(--rosa-2); }
+    .doc code { font-family: var(--mono); font-size: 13.5px; padding: 1px 6px; border-radius: 6px; background: rgba(255,255,255,.08); color: #ffd6ef; word-break: break-word; }
+    .indice { margin: 0 0 8px; padding: 16px 20px; border-radius: 16px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); columns: 2; column-gap: 28px; list-style: none; }
+    .indice li { margin: 3px 0; font-size: 14.5px; break-inside: avoid; }
+    .indice a { color: var(--suave); text-decoration: none; }
+    .indice a:hover { color: var(--azul); }
+    .tabela { width: 100%; border-collapse: collapse; margin: 10px 0 14px; font-size: 14.5px; }
+    .tabela th, .tabela td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,.09); color: #e2d9f6; line-height: 1.55; }
+    .tabela th { color: var(--tinta); font-weight: 700; background: rgba(255,255,255,.04); }
+    .tabela code { white-space: nowrap; }
+    .tabela th:nth-child(2) { width: 40%; }
+    .rolar { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .voltar { display: inline-block; margin-top: 26px; font-size: 14.5px; }
+
+    /* contacto */
+    .contato { padding: clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 1.3fr 1fr; gap: 30px; align-items: center; overflow: hidden; position: relative; }
+    .contato::after {
+      content: ""; position: absolute; right: -120px; top: -120px; width: 380px; height: 380px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,63,180,.35), transparent 65%); pointer-events: none;
+    }
+    .contato p { color: var(--suave); margin: 0 0 10px; }
+    .email { font-size: clamp(17px, 2.4vw, 22px); font-weight: 700; word-break: break-all; }
+
+    /* rodapé */
+    footer { padding: 46px 0 56px; border-top: 1px solid rgba(255,255,255,.08); background: rgba(5,2,12,.55); }
+    footer .caixa { display: grid; grid-template-columns: 1.2fr 1fr; gap: 26px; }
+    footer p { margin: 0 0 8px; color: var(--apagado); font-size: 14px; }
+    footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: flex-end; align-content: start; }
+    footer nav a { color: var(--suave); font-size: 14px; text-decoration: none; }
+    footer nav a:hover { color: var(--azul); }
+
+    /* animações discretas */
+    .js .aparece { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .js .aparece.ver { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .js .aparece { opacity: 1; transform: none; }
+    }
+
+    /* ---------- responsivo ---------- */
+    @media (max-width: 1060px) {
+      .g4 { grid-template-columns: repeat(2, 1fr); }
+      .ia { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 860px) {
+      .topo .caixa { flex-wrap: wrap; gap: 0; min-height: 0; padding: 10px 0 6px; }
+      .menu { margin: 6px -16px 0; padding: 0 12px 4px; width: calc(100% + 32px); overflow-x: auto; scrollbar-width: none; }
+      .menu::-webkit-scrollbar { display: none; }
+      .menu a { padding: 7px 11px; font-size: 14px; }
+      html { scroll-padding-top: 118px; }
+      .g3 { grid-template-columns: 1fr; }
+      .contato, footer .caixa { grid-template-columns: 1fr; }
+      footer nav { justify-content: flex-start; }
+      .controlo { grid-template-columns: 1fr; }
+      .controlo .lista { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .g4 { grid-template-columns: 1fr; }
+      .agentes { grid-template-columns: 1fr; }
+      .indice { columns: 1; }
+      .abertura { --h: 120px; }
+      .abertura .caixa { padding: 44px 0 calc(var(--h) + 200px); }
+      .abertura::before { background: linear-gradient(180deg, rgba(13,6,32,.55), rgba(13,6,32,.25) 60%, transparent 80%); }
+      .sol { left: 50%; width: 300px; }
+      .reflexo { left: 50%; }
+      .marca b { font-size: 15px; letter-spacing: .1em; }
+      .marca small { font-size: 12px; }
+      .selo { width: 34px; height: 34px; }
+      .cartao, .rede, .fluxo, .equipa { padding: 22px; }
+      .tabela code { white-space: normal; word-break: break-all; }
+      .tabela thead { display: none; }
+      .tabela, .tabela tbody, .tabela tr, .tabela td { display: block; width: 100%; }
+      .tabela tr { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+      .tabela td { border: 0; padding: 3px 0; }
+      .tabela td:first-child { font-weight: 700; color: var(--tinta); font-size: 15.5px; }
+      .tabela td:nth-child(2)::before { content: "Permissões: "; color: var(--apagado); }
+      .tabela td:nth-child(3)::before { content: "Dados lidos: "; color: var(--apagado); }
+    }
+
+    /* páginas de documento */
+    .faixa { position: relative; overflow: hidden; padding: 56px 0 40px; isolation: isolate;
+      background: linear-gradient(180deg, #0d0620 0%, #2a0f52 40%, #6c1a83 75%, #c42a8c 100%); }
+    .faixa::after { content: ""; position: absolute; z-index: -1; right: 8%; bottom: -120px; width: 220px; height: 220px; border-radius: 50%;
+      background: linear-gradient(180deg, #ffe9a3, #ff7a9c 60%, #c2188b);
+      box-shadow: 0 0 120px 30px rgba(255,94,150,.4);
+      -webkit-mask-image: linear-gradient(180deg, #000 0 40%, transparent 40% 45%, #000 45% 52%, transparent 52% 58%, #000 58%);
+              mask-image: linear-gradient(180deg, #000 0 40%, transparent 40% 45%, #000 45% 52%, transparent 52% 58%, #000 58%); }
+    .faixa a { color: #ffe1f3; font-size: 14.5px; text-decoration: none; }
+    .faixa a:hover { color: #fff; }
+    .faixa p { margin: 0; }
+    .pagina-doc { padding: 40px 0 80px; }
+    .outro-doc { text-align: center; margin: 8px 0 0; color: var(--suave); }
+    @media (max-width: 600px) { .faixa::after { width: 160px; height: 160px; bottom: -95px; right: 16px; } }
+  </style>
+</head>
+<body id="topo">
+  <a class="salto" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="caixa">
+      <a class="marca" href="index.html" aria-label="GTA 6 Studio BR, início">
+        <svg class="selo" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="selo-g" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffd27a"/><stop offset=".55" stop-color="#ff4fb0"/><stop offset="1" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="#1a0b33" stroke="rgba(255,122,209,.5)"/>
+          <circle cx="32" cy="34" r="18" fill="url(#selo-g)"/>
+          <rect x="10" y="37" width="44" height="2.5" fill="#1a0b33"/>
+          <rect x="10" y="42.5" width="44" height="3.5" fill="#1a0b33"/>
+          <rect x="10" y="49" width="44" height="4.5" fill="#1a0b33"/>
+        </svg>
+        <span><b>GTA 6 STUDIO BR</b><small>O futuro dos cortes começa aqui</small></span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html#fazemos">O que fazemos</a>
+        <a href="index.html#ia">Inteligência Artificial</a>
+        <a href="index.html#redes">Redes sociais</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="faixa">
+      <div class="caixa"><p><a href="index.html">← Voltar ao site</a></p></div>
+    </div>
+    <div class="caixa pagina-doc">
+      <article class="vidro doc" aria-labelledby="titulo-termos">
+          <p class="sobre">Documento</p>
+          <h2 id="titulo-termos">Termos de Serviço</h2>
+          <p class="data">Última atualização: 21 de novembro de 2026</p>
+
+          <ol class="indice">
+            <li><a href="#t-aceite">1. Aceitação</a></li>
+            <li><a href="#t-servico">2. O que é o serviço</a></li>
+            <li><a href="#t-conteudo">3. Conteúdo e direitos</a></li>
+            <li><a href="#t-plataformas">4. Uso das plataformas</a></li>
+            <li><a href="#t-auto">5. Publicação automática</a></li>
+            <li><a href="#t-ia">6. Uso de inteligência artificial</a></li>
+            <li><a href="#t-marcas">7. Marcas e afiliação</a></li>
+            <li><a href="#t-resp">8. Responsabilidade</a></li>
+            <li><a href="#t-mudancas">9. Alterações e contato</a></li>
+          </ol>
+
+          <h3 id="t-aceite">1. Aceitação</h3>
+          <p>Ao usar este site ou a aplicação GTA 6 Studio BR, você concorda com estes Termos e com a <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+          <h3 id="t-servico">2. O que é o serviço</h3>
+          <p>O GTA 6 Studio BR é uma aplicação de desktop que ajuda o estúdio a pesquisar lives, editar cortes verticais, gerar legendas em português do Brasil e preparar e publicar vídeos curtos nas contas do próprio estúdio no YouTube, no Instagram e no TikTok. A aplicação é de uso interno: não é vendida, não tem planos pagos e não gerencia contas de outras pessoas. Este site é apenas informativo.</p>
+
+          <h3 id="t-conteudo">3. Conteúdo e direitos</h3>
+          <ul>
+            <li>Só publicamos cortes de fontes que o estúdio marcou como autorizadas, com o tipo de autorização e a prova registrados na aplicação. Fontes sem autorização podem ser analisadas, mas não são publicadas.</li>
+            <li>Os cortes mantêm a voz e a imagem originais do criador e não alteram o sentido do que foi dito.</li>
+            <li>O criador ou o titular dos direitos pode pedir a remoção de qualquer corte pelo e-mail <a href="mailto:angeloflamengo92@gmail.com">angeloflamengo92@gmail.com</a>. Atendemos os pedidos válidos o mais rápido possível.</li>
+          </ul>
+
+          <h3 id="t-plataformas">4. Uso das plataformas</h3>
+          <p>A aplicação usa apenas as APIs oficiais: YouTube Data API, API do Instagram com Login do Instagram e TikTok Content Posting API com Login Kit. Respeitamos os termos, as diretrizes da comunidade e os limites de cada plataforma. No TikTok, as publicações públicas só serão ligadas depois de a aplicação ser aprovada na revisão do TikTok.</p>
+
+          <h3 id="t-auto">5. Publicação automática</h3>
+          <p>A publicação automática vem desligada e só é ligada por uma pessoa do estúdio. Mesmo ligada, um vídeo só é publicado se cumprir todas estas regras:</p>
+          <ul>
+            <li>vem de uma fonte autorizada;</li>
+            <li>passou na revisão técnica e visual e atingiu a nota mínima;</li>
+            <li>tem legenda em português do Brasil;</li>
+            <li>não repete um vídeo ou trecho já publicado;</li>
+            <li>está dentro dos horários, do intervalo entre publicações e do limite diário de cada rede.</li>
+          </ul>
+          <p>O estúdio pode parar todas as publicações a qualquer momento.</p>
+
+          <h3 id="t-ia">6. Uso de inteligência artificial</h3>
+          <p>A IA ajuda a escolher momentos, sugerir títulos e revisar os cortes. Não gera nem altera as imagens ou a voz do criador: o vídeo publicado é sempre um trecho da live original. Como qualquer ferramenta automática, pode errar; por isso existem a revisão, as regras de publicação e o canal de remoção.</p>
+
+          <h3 id="t-marcas">7. Marcas e afiliação</h3>
+          <p>O GTA 6 Studio BR é um projeto independente de fãs. Não é afiliado, patrocinado nem aprovado pela Rockstar Games, Take-Two Interactive, Google, YouTube, Meta, Instagram ou TikTok. «Grand Theft Auto» e «GTA» são marcas dos respectivos titulares e são citadas apenas para identificar o tema dos vídeos.</p>
+
+          <h3 id="t-resp">8. Responsabilidade</h3>
+          <p>O site e a aplicação são fornecidos no estado em que se encontram. Fazemos o possível para que funcionem bem, mas não garantimos que estejam sempre disponíveis ou livres de erros. As plataformas podem mudar as suas regras ou APIs a qualquer momento, o que pode interromper funções da aplicação.</p>
+
+          <h3 id="t-mudancas">9. Alterações e contato</h3>
+          <p>Podemos atualizar estes Termos quando a aplicação mudar. A nova versão é publicada nesta página, com a data no topo. Dúvidas: <a href="mailto:angeloflamengo92@gmail.com">angeloflamengo92@gmail.com</a>.</p>
+          <a class="voltar" href="#topo">↑ Voltar ao topo</a>
+        </article>
+      <p class="outro-doc">Veja também a <a href="privacidade.html">Política de Privacidade</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="caixa">
+      <div>
+        <p><strong style="color:var(--tinta)">GTA 6 Studio BR</strong> · O futuro dos cortes começa aqui</p>
+        <p>Projeto independente. Não afiliado à Rockstar Games, Take-Two Interactive, Google, Meta ou TikTok.</p>
+        <p>© 2026 GTA 6 Studio BR · <a href="mailto:angeloflamengo92@gmail.com">angeloflamengo92@gmail.com</a></p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a href="index.html#fazemos">O que fazemos</a>
+        <a href="index.html#ia">Inteligência Artificial</a>
+        <a href="index.html#redes">Redes sociais</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Serviço</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
